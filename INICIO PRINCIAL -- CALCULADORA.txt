@@ -1,0 +1,53 @@
+INICIO PRINCIAL -- CALCULADORA
+Var resultado : inteiro
+Var Calculo_selecionado : String
+Var Parar_calculo : BOOLEANO
+
+DEFINIR parar_calculo -> falso
+CHAMAR CALCULADORA -> calculo_selecionado 
+SE calculo_selecionado IGUAL_A a
+MOSTRAR "Digite um número para Soma"
+ler número
+Mostrar "Segundo número para Soma"
+ler número1
+SOMAR numero1,numero2 -> resultado
+MOSTRAR "Resultado é", resultado
+OU_SE calculo_selecionado IGUAL_A b
+MOSTRAR "Digite número"
+ler número
+Mostrar "Segundo número"
+ler número1
+MULTIPLICAR numero,numero1 -> resultado
+MOSTRAR "Resultado é", resultado
+OU_SE calculo_selecionado IGUAL_A c
+MOSTRAR "Digite número"
+ler número
+Mostrar "Segundo número"
+ler número1
+DIVIDIR numero,numero1 -> resultado
+MOSTRAR "Resultado é", resultado
+OU_SE calculo_selecionado IGUAL_A d
+MOSTRAR "Digite número"
+ler número
+Mostrar "Segundo número"
+ler número1
+SUBTRAIR numero,numero1 -> resultado
+MOSTRAR "Resultado é", resultado
+OU_SE calculo_selecionado IGUAL_A e
+DEFINIR verdadeiro ->  Parar_calculo
+SENAO
+MOSTRAR "Selecione um Opção Valida de Calculo"
+FIM SE
+FIM ENQUANTO
+FINAL
+
+INICIO CALCULADORA
+VAR Calculo_selecionado : STRING
+MOSTRAR "Menu de Calculo"
+MOSTRAR "[A] Caso Queira Somar 2 ´Números"
+MOSTRAR "[B] Caso Queira Multiplicar 2 ´Números"
+MOSTRAR "[C] Caso Queira Dividir 2 ´Números"
+MOSTRAR "[D] Caso Queira Subtrair 2 ´Números"
+MOSTRAR "[E] Encerrar Calculo"
+RETURN Calculo_selecionado
+FIM CALCULADORA
